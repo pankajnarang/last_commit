@@ -1,0 +1,15 @@
+name: "Last Commit"
+description: "Changes in last commit"
+author: "Pankaj Narang"
+branding:
+  color: blue
+  icon: anchor
+outputs:
+  folderName:
+    description: 'The folderName of the matching folder found.'
+runs:
+  using: composite
+  steps:
+    - run: |
+        "$GITHUB_ACTION_PATH/cr.sh" "${args[@]}"
+      shell: bash
