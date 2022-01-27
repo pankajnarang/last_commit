@@ -21,7 +21,7 @@ jobs:
 
       - name: changed-files
         id: cFiles
-        uses: cheddartv/pnarang-terraform@main
+        uses: pankajnarang/last_commit@main
 
       - name: Check the output from My action
         run: echo "${{ env.folderName }}"
